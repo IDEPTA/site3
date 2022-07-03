@@ -97,7 +97,21 @@ header {
         img:nth-child(3){
             bottom: 30px;
             position: absolute;
+            animation: row 0.5s linear infinite;
         }
+    }
+    @keyframes row {
+        0%{
+            margin-bottom: 0px;
+        }
+        50%{
+            margin-bottom: 10px;
+
+        }
+        100%{
+            margin-bottom: 0px;
+        }
+        
     }
 }
 .section-one{
@@ -314,6 +328,7 @@ footer {
 
     img {
         margin: 50px 0px;
+        animation: puls 1s infinite;
     }
 
     ul {
@@ -324,6 +339,17 @@ footer {
             cursor: pointer;
             margin: 0px 30px;
             color: #6B6B6B;
+        }
+    }
+    @keyframes puls {
+        0%{
+            transform: scale(0.9);
+        }
+        50%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0.9);
         }
     }
 }
